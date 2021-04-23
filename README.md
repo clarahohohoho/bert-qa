@@ -25,11 +25,13 @@ ATLOP
 ``` bash
 cd bert-qa
 virtualenv venv
+source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
 ## Run QnA Tool
 ``` bash
+source ./venv/bin/activate
 python ui.py
 ```
 
