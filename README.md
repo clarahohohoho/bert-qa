@@ -13,7 +13,7 @@ I have also developed a simple user interface (UI) with PyQt5 to access the Ques
 ## Data Structure
 
 ```
-ATLOP
+bert-qna
  |-- main.py (main running script to call pretrained BERT model)
  |-- ui.py (script to form user interface)
  |-- requirements.txt
