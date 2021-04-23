@@ -2,9 +2,9 @@
 
 ## Introduction
 
-A Question and Answer bot that is able to answer questions based on a provided set of text.  
+A Question Answering application that is able to answer questions based on a provided set of text.  
 The trained BERT model is adopted from Huggingface's repository of models, where a large BERT model was trained on the popular question answering dataset SQuAd 2.0.
-I have also developed a simple user interface (UI) with PyQt5 to access the QnA tool.
+I have also developed a simple user interface (UI) with PyQt5 to access the Question Answering tool.
 
 ## Screenshot of Application
 
