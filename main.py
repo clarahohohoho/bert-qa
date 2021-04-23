@@ -3,10 +3,9 @@ from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 
 def main(context, question):
     
-    model_name = "./bert-large-uncased-whole-word-masking-squad2_model"
-    tok_name = "./bert-large-uncased-whole-word-masking-squad2_tokenizer"
+    model_name = "deepset/bert-large-uncased-whole-word-masking-squad2"
     model = AutoModelForQuestionAnswering.from_pretrained(model_name)
-    tokenizer = AutoTokenizer.from_pretrained(tok_name)
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     # a) Get predictions
     nlp = pipeline('question-answering', model=model, tokenizer=tokenizer)
@@ -17,4 +16,3 @@ def main(context, question):
     res = nlp(QA_input)
 
     return res['answer']
-
